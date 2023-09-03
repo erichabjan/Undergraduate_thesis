@@ -1,0 +1,10 @@
+This project had two main components: spectral line refitting and physical quantity derivation. These two files are the culmination of the entire projects that contains the 
+framework code that was used in this project to produce metallicity values in NGC 4254, as well as the other 18 PHANGS-MUSE galaxies. This code is generalized to analyze other galaxies
+in the Nebular catalog for future use on other galaxies that also contain data from the SITELLE spectrograph at the CFHT. 
+
+**INIT_LR_SITELLE** This file contains the initial line refitting code for MUSE-PHANGS galaxies with SITELLE data. Faint emission lines, also known as auroral lines, are refitted 
+to obtain flux values. The four auroral lines are [OII]7319,7330, [NII]5755, and [SIII]6312. Orgininally the background continuum was not subtracted in the Nebular catalog, so in 
+this notebook I fit the auroral lines with a normal gaussian with a constant offset to account for the background continuum. The error in these measurements are calculated using 
+monte carlo techniques. 
+
+**
